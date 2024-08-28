@@ -1,0 +1,40 @@
+apiVersion: ericsson.com/v1alpha1
+kind: DeveloperService
+metadata:
+  annotations:
+    backstage.io/source-location: url:https://gerrit.ericsson.se/#/admin/projects/DETES/com.ericsson.de.stsoss/monitoring
+    jira.com/project-keys: DETS
+    jira.com/filter-ids: 262879
+    overview/bug-filter: "262880"
+    overview/bug-template: https://eteamproject.internal.ericsson.com/browse/DETS-30607
+    overview/support-template: https://eteamproject.internal.ericsson.com/browse/DETS-30607
+    gerrit/component: DETES/com.ericsson.de.stsoss/monitoring
+  name: ffe
+  title: Fast Feedback Environments
+  description: FFE vENM (Fast Feedback Environment) is a virtualised ENM on Red Hat OpenStack. It is the direct replacement for the VMware vApp
+    FFE vENM solution will consist of
+    vENM XS (Extra Small), Gateway VM, VNFLCM VM, Netsim (1.8K) VM, Selenium VM, TAF VM
+  links:
+    - url: https://eteamspace.internal.ericsson.com/display/CIEED/DETS+-+FFE+vENM+Service+Information
+      title: DETS - FFE vENM Service Information
+      icon: dashboard
+    - url: https://eteamproject.internal.ericsson.com/secure/Dashboard.jspa?selectPageId=83237#
+      title: FFE Dashboard
+      icon: dashboard
+  tags:
+    - ffe
+    - ready-for-non-commercial-use
+  roles:
+    scrum-master: ESHMUNA
+    product-owner: ESHMUNA
+    ci-spoc: ESHMUNA
+    test-expert: ESHMUNA
+    NM-Service-architect: ESHMUNA
+    security-master: ESHMUNA
+    line-manager:
+      - EEIDBON
+      - EEIJTAR
+spec:
+  lifecycle: planned
+  owner: team-unicore
+  type: NM-Service

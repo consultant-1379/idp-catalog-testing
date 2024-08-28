@@ -1,0 +1,89 @@
+apiVersion: ericsson.com/v1alpha1
+kind: DeveloperService
+metadata:
+  annotations:
+    backstage.io/source-location: url:https://gerrit-gamma.gic.ericsson.se/plugins/gitiles/DETES/com.ericsson.de.stsoss/idp-catalog-testing
+    jira.com/project-keys: "EESS, DETS"
+    jira.com/filter-ids: "262879"
+    overview/bug-filter: "262880"
+    overview/support-filter: "262879"
+    overview/bug-template: https://eteamproject.internal.ericsson.com/browse/DETS-30607
+    overview/support-template: https://eteamproject.internal.ericsson.com/browse/EESS-32541
+    gerrit/component: DETES/com.ericsson.de.stsoss/idp-catalog-testing
+    overview/teams-channel: https://teams.microsoft.com/l/channel/19%3a5cb2682b133d4c0b95beaa5827a03d19%40thread.tacv2/Team%2520Unicore?groupId=e265dfea-27f0-49a6-8acb-0f158ade40b7&tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f
+    jenkins: 
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/FFE_Commissioning_Pipeline/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/EE_FFE_C17B03/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/EE_FFE_C17B14/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/EE_FFE_C17B21/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B10/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B11/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B12/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B15/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B16/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B18/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B19/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B22/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B26/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B28/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B29/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B30/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B31/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B32/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B33/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B35/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B36/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B37/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B38/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B39/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B40/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B41/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B42/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B43/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B44/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B45/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B46/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B47/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/ENM_FFE_C17B48/,
+       fem24s11-eiffel004.eiffel.gic.ericsson.se:8443/EE_TestServices_C17B25/
+  name: ffe
+  title: Fast Feedback Environments
+  description: "FFE vENM (Fast Feedback Environment) is a virtualised ENM on Red Hat OpenStack. It is the direct replacement for the VMware vApp
+    FFE vENM solution will consist of
+    vENM XS (Extra Small), Gateway VM, VNFLCM VM, Netsim (1.8K) VM, Selenium VM, TAF VM etc."
+  links:
+    - url: https://eteamspace.internal.ericsson.com/display/CIEED/DETS+-+FFE+vENM+Service+Information
+      title: DETS - FFE vENM Service Information Management
+      icon: dashboard
+    - url: https://eteamproject.internal.ericsson.com/secure/Dashboard.jspa?selectPageId=83237#
+      title: FFE Dashboard
+      icon: dashboard
+  architecture:
+    current:
+      overview:
+              #$text: https://eteamspace.internal.ericsson.com/pages/viewpage.action?spaceKey=CIEED&title=vLITP+-+deployment+steps
+      diagrams:
+        "System Context Diagram":
+                # $text: https://gerrit-gamma.gic.ericsson.se/plugins/gitiles/DETES/com.ericsson.de.stsoss/idp-catalog-testing/+/refs/heads/master/FFE_Architecture.puml
+          $text: https://gerrit-gamma.gic.ericsson.se/plugins/gitiles/DETES/com.ericsson.de.stsoss/idp-catalog-testing/+/refs/heads/master/FFE_Architecture.puml
+  tags:
+    - ffe
+    - ready-for-non-commercial-use
+  roles:
+    scrum-master: emurois
+    product-owner: ESHMUNA
+    ci-spoc: ESHMUNA
+    test-expert: ejnkmrt
+    NM-Service-architect: ESHMUNA
+    security-master: ESHMUNA
+    line-manager:
+      - EEIDBON
+      - EEIJTAR
+spec:
+  lifecycle: planned
+  owner: team-unicore
+  owners:
+    - team-unicore
+    - team-elementals
+  system: FFE Service
+  type: nmservice

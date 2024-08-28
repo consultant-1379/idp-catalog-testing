@@ -1,0 +1,37 @@
+@startuml
+!include http://nmidp-oss-c4.ews.gic.ericsson.se/include/C4_Context.puml
+!include http://nmidp-oss-c4.ews.gic.ericsson.se/include/C4_Container.puml
+!include http://nmidp-oss-c4.ews.gic.ericsson.se/include/common_parent.puml
+skinparam rectangle {
+  BorderColor black
+  BackgroundColor white
+  RoundCorner 20
+}
+
+rectangle "vENM Northbound (192.168.8.0/16)" as northbound {
+  node "VNF-LCM" as VNF_LCM
+  node "XS vENM" as XS_vENM
+  node "TAF" as TAF
+  node "Selenium" as Selenium
+  node "NetSim (1.8K)" as NetSim
+}
+
+rectangle "vENM Internal (10.10.0.0/21)" as internal {
+  [VNF_LCM] --> [XS_vENM]
+  [XS_vENM] --> [TAF]
+  [TAF] --> [Selenium]
+  [Selenium] --> [NetSim]
+}
+
+rectangle "GW" as GW {
+  [Jenkins] 
+}
+
+rectangle "Openstack API" as Openstack_API {
+}
+
+Openstack_API --> GW : GGN external
+GW --> northbound
+GW --> Jenkins
+
+@enduml
